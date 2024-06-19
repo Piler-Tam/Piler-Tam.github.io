@@ -1,17 +1,18 @@
-<a href="#info">
+<a href="#1">
 Dropdown menu with search
 </a>
+
+<a href="#2">
 Create Dropdown in PropertyDrawer
+</a>
 Remove non-visible characters/Weird string behavior
 Fix HDRP UI affected by Anti-Aliasing
 TextMeshPro Chinese Font
 UnityWebRequest: A Native Collection has not been disposed, resulting in a memory leak.
 
 
-
-
-
-<h1 id="info">
+< br / > 
+<h1 id="1">
 Dropdown menu with search
 </h1>
 
@@ -65,3 +66,32 @@ public class AdvancedDropdownTestWindow : EditorWindow
 ```
 
 https://docs.unity3d.com/ScriptReference/IMGUI.Controls.AdvancedDropdown.html
+
+
+< br / > 
+<h1 id="2">
+Create Dropdown in PropertyDrawer
+</h1>
+
+Offical example code:
+```
+public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+{
+    index = EditorGUILayout.Popup(index, options);
+}
+```
+If you want to update property value after select:
+```
+public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+{
+  int index = Array.IndexOf(options, property.objectReferenceValue);
+  
+  if (index!= -1)
+  {
+      index = EditorGUI.Popup(position, label.text, index, options);
+      property.objectReferenceValue = options[index];
+  }
+}
+```
+
+
