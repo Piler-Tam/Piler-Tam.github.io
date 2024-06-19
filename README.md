@@ -1,4 +1,4 @@
-<a name="Dropdown menu with search">
+<a href="#info">
 Dropdown menu with search
 </a>
 Create Dropdown in PropertyDrawer
@@ -11,7 +11,7 @@ UnityWebRequest: A Native Collection has not been disposed, resulting in a memor
 
 
 
-<h1 id="Dropdown menu with search">
+<h1 id="info">
 Dropdown menu with search
 </h1>
 
