@@ -2,16 +2,34 @@
 Dropdown menu with search
 </a>
 
+<br/>
 <a href="#2">
 Create Dropdown in PropertyDrawer
 </a>
+
+<br/>
+<a href="#3">
 Remove non-visible characters/Weird string behavior
+</a>
+
+<br/>
+<a href="#4">
 Fix HDRP UI affected by Anti-Aliasing
+</a>
+
+<br/>
+<a href="#5">
 TextMeshPro Chinese Font
+</a>
+
+<br/>
+<a href="#6">
 UnityWebRequest: A Native Collection has not been disposed, resulting in a memory leak.
+</a>
 
 
-< br / > 
+
+<br/> 
 <h1 id="1">
 Dropdown menu with search
 </h1>
@@ -68,7 +86,7 @@ public class AdvancedDropdownTestWindow : EditorWindow
 https://docs.unity3d.com/ScriptReference/IMGUI.Controls.AdvancedDropdown.html
 
 
-< br / > 
+<br/> 
 <h1 id="2">
 Create Dropdown in PropertyDrawer
 </h1>
